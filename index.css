@@ -95,7 +95,9 @@ body{
 }
 
 
-.item-content p:hover{
+
+
+.item-content p:hover,.item-content-sidebar p:hover{
     color:#000
 }
 
@@ -248,6 +250,7 @@ body{
 .close-icons img{
     float: right;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .sidebar-content .menu-sidebar{
@@ -259,6 +262,11 @@ body{
     flex-direction: column;
     gap:20px;
 }
+
+.authentification-sidebar{
+    color:gray
+}
+
 
 @media screen and (max-width:968px){
     .navbar-container .navbar-content{
