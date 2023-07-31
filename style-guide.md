@@ -21,7 +21,7 @@ The designs were created to the following widths:
 
 - Font size (paragraph): 18px
 
-### Font
+### Font18px
 
 - Family: [Epilogue](https://fonts.google.com/specimen/Epilogue)
 - Weights: 500, 700

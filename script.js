@@ -10,13 +10,24 @@ const menuBtn = document.querySelector(".mobile-menu-btn");
 
 
 
-
-
 function close_sidebar(){
-    if(sidebar_wrapper.classList.contains('show-sidebar')){
+    if(sidebar_wrapper.classList.contains('show-sidebar') ){
         sidebar_wrapper.classList.remove('show-sidebar')
     }
 }
+
+// Function to log window size whenever it changes
+function logWindowSize() {
+    if(sidebar_wrapper.classList.contains('show-sidebar') && window.innerWidth>770){
+        sidebar_wrapper.classList.remove('show-sidebar')
+    }
+  }
+  
+  // Add an event listener to the "resize" event
+  window.addEventListener("resize", logWindowSize);
+  
+ 
+
 
 function show_sidebar(){
     if(!sidebar_wrapper.classList.contains('show-sidebar')){
